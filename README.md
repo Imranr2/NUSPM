@@ -83,3 +83,23 @@ Numbering for Work Division
  	</tr>
 </table>
 
+<h2>Wireframes</h2>
+<div align="center">
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Create%20Account.png?raw=true" alt="Create Account Page">
+  <p><strong> Register Account</strong></p>
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Login.png?raw=true" alt="Login Page">
+  <p><strong>Login</strong></p>
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/View%20Swap.png?raw=true" alt="View Swap Page">
+  <p><strong>View Swap</strong></p>
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Confirm%20Swap.png?raw=true" alt="Confirm Swap Page">
+  <p><strong>Confirm Swap</strong></p>
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Create%20Swap.png?raw=true" alt="Create Swap Page">
+  <p><strong>Create Swap</strong></p>
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Open%20Swap.png?raw=true" alt="Your Swap Page">
+  <p><strong>Your Swap</strong></p>
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Offer%20Page.png?raw=true" alt="Current Offers Page">
+  <p><strong>Current Offers</strong></p>
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Completed%20Email%20Highlighted%20%28Video%29.png?raw=true" alt="Completed Swap Page">
+  <p><strong>Completed Swap</strong></p>
+</div>
+
