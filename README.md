@@ -85,21 +85,36 @@ Numbering for Work Division
 
 <h2>Wireframes</h2>
 <div align="center">
+  <kbd>	
   <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Create%20Account.png?raw=true" alt="Create Account Page">
+  </kbd>
   <p><strong> Register Account</strong></p>
+  <kbd>	
   <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Login.png?raw=true" alt="Login Page">
+  </kbd>
   <p><strong>Login</strong></p>
+  <kbd>
   <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/View%20Swap.png?raw=true" alt="View Swap Page">
+  </kbd>
   <p><strong>View Swap</strong></p>
+  <kbd>
   <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Confirm%20Swap.png?raw=true" alt="Confirm Swap Page">
+  </kbd>
   <p><strong>Confirm Swap</strong></p>
+  <kbd>
   <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Create%20Swap.png?raw=true" alt="Create Swap Page">
+  </kbd>
   <p><strong>Create Swap</strong></p>
+  <kbd>
   <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Open%20Swap.png?raw=true" alt="Your Swap Page">
+  </kbd>
   <p><strong>Your Swap</strong></p>
+  <kbd>
   <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Offer%20Page.png?raw=true" alt="Current Offers Page">
+  </kbd>
   <p><strong>Current Offers</strong></p>
+  <kbd>
   <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Completed%20Email%20Highlighted%20%28Video%29.png?raw=true" alt="Completed Swap Page">
+  </kbd>
   <p><strong>Completed Swap</strong></p>
 </div>
-
