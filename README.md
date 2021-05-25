@@ -5,7 +5,12 @@
 <p>A webapp that allows students to connect and find better tutorial slots.
 
 NUSPM enables students to create swap requests to trade their tutorial slot for a more desirable one. Students are also able to initiate swap requests with other students. This solves the current issue which involves asking on multiple platforms(Telegram, Reddit etc…) which is troublesome and inefficient.
-
+<div align="center">
+  <kbd>
+     <img src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Flow%20Chart.png?raw=true" alt="Flow Chart">
+  </kbd>
+  <p><strong>Flow Chart</strong></p>
+</div>
 </p>
 <h2><strong>Motivation</strong></h2>
 <p>Imagine that you were allocated a tutorial slot that does not fit in your timetable. At this point, you are feeling stressed out as you might not be able to secure your desired tutorial slot and might be forced to drop the module. You also have no way of knowing if there is another student willing to swap with your slot. Also due to the covid situation, it is difficult to reach out to other students taking the same module and you might be left with an undesirable slot even after the first add/swap tutorial exercise. What if there was a website that you can use to find potential swaps before the round starts? This will immensely alleviate the stress that you are having. Welcome to NUSPM, a website where you can create requests for swaps and also view requests created by other students who are facing the same problem.</p>
