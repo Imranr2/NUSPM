@@ -1,10 +1,12 @@
 # NUSPM
 
 <h3><strong>Proposed Level of Achievement:</strong> Gemini</h3>
+<br>
 <h2><strong>Project Scope</strong></h2>
 <p>A webapp that allows students to connect and find better tutorial slots.
 
 NUSPM enables students to create swap requests to trade their tutorial slot for a more desirable one. Students are also able to initiate swap requests with other students. This solves the current issue which involves asking on multiple platforms(Telegram, Reddit etc…) which is troublesome and inefficient.
+
 <div align="center">
   <kbd>
      <img src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Flow%20Chart.png?raw=true" alt="Flow Chart">
