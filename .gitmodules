@@ -1,3 +1,6 @@
 [submodule "NUSPM-api"]
 	path = NUSPM-api
 	url = https://github.com/Imranr2/NUSPM-api
+[submodule "NUSPM-front-end"]
+	path = NUSPM-front-end
+	url = https://github.com/Imranr2/NUSPM-front-end
