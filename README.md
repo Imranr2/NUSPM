@@ -72,7 +72,9 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
       Users that are not logged in are only able to access the sign up page and the landing page.
       First time users can click the Sign up here button where they will be redirected to create an account.
       <br/>
+      <br/>
       An error alert will be displayed if the user keys in invalid credentials.
+      <br/>
       <br/>
       Upon signing in successfully, users will be redirected to the homepage.
     </td>
@@ -95,13 +97,18 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
       <br/>
       Users are able to create their own swap request where they will input their module code, slot type, current slot and desired slots.
       <br/>
+      <br/>
       Users are allowed to select multiple desired slots.
+      <br/>
       <br/>
       All the options displayed are fetched from NUSMods API.
       <br/>
+      <br/>
       Users are only allowed to create 1 swap request per module code for a given slot type.
+      <br/>
       <br/> 
       An error alert will be displayed if a user attempts to create a swap request for the same module code and slot type.
+      <br/>
       <br/>
       Once a swap request is created, an alert will be displayed with a hyperlink which will redirect the user to view his/her created swaps
     </td>
@@ -219,9 +226,12 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
       <br/>
       Allows users to view swap requests created by other users.
       <br/>
+      <br/>
       Users are to select the module code, slot type and their current slot from the autocomplete options given.
       <br/>
+      <br/>
       Users are only allowed to view modules that are available on NUSMods.
+      <br/>
       <br/>
       The type and current slot selected is filtered based on module details obtained from NUSMods(For example, if a module only has recitation and laboratory then the slot type options will only consist of rec and lab). Upon changing the module code, selected slot type and current slot will be cleared to prevent unnecessary requests.
       <br/>
