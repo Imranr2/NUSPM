@@ -234,8 +234,6 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
       <br/>
       <br/>
       The type and current slot selected is filtered based on module details obtained from NUSMods(For example, if a module only has recitation and laboratory then the slot type options will only consist of rec and lab). Upon changing the module code, selected slot type and current slot will be cleared to prevent unnecessary requests.
-      <br/>
-      When a user clicks on the swap request, a dialog will open.
     </td>
     <td rowspan="5">
       Completed
