@@ -1,4 +1,6 @@
-# NUSPM
+<img src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Logo.png?raw=true" alt="NUSPM Logo">
+<h1 align="center">Your one-stop solution for tutorial management</h1>
+<a href="https://nuspm.netlify.app/"><h2 align="center">Click here to get started!</h2></a>
 
 <h3><strong>Proposed Level of Achievement:</strong> Gemini</h3>
 <br>
@@ -27,101 +29,298 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
   <li>As a student, I want to be able to view the details of the slot that is available and see the impact of the swap on my timetable.
 </li>
 </ol>
-<h2><strong>Proposed Timeline and Features</strong></h2>
-<p>
-Numbering for Work Division
+<p align="center">
+<kbd>
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Register%20Page.png?raw=true" alt="Register Page">
+</kbd>
+<kbd>
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Sign%20In%20Page.png?raw=true" alt="Sign In Page">
+</kbd>
 </p>
-<ol>
-  <li> Imran </li>
-  <li> Jian Hong </li>
-  <li> Both </li>
-</ol>
-
 <table>
-	<tr>
-		<th>Feature</th>
-		<th>Details</th>
-		<th>Proposed date of completion</th>
-    <th>Stage of completion</th>
- 	</tr>
- 	<tr>
-    <td>Login, Signup and Account management</td>
-   	<td>
-      <ul>
-        <li>Backend for user account creation and login system (1)</li>
-        <li>Frontend Signup and Login pages for users (2)</li>
-        <li>Account management for users, able to edit email address and password (3)</li>
-    </td>
-		<td>End May</td>
-    <td>Completed Login and Signup pages, Account Management page to be completed</td>
- 	</tr>
-	<tr>
-  	<td>Swap System</td>
-   	<td>
-      <ul>
-        <li>Users able to create, view, update and delete swap requests (1)</li>
-        <li>Users are able to view tutorial details (2)</li>
-      </ul>
-    </td>
-		<td>June Week 2</td>
-    <td>To be completed</td>
- 	</tr>
-	<tr>
-  	<td>Swap System</td>
-   	<td>
-      <ul>
-        <li>Users able to accept and initiate offers (3)</li>
-        <li>Integration with NUSMODS to retrieve module information from NUSMODS API (3)</li>
-        <li>Host website on Netlify and Heroku (3)</li>
-      </ul>
-    </td>
-		<td>End of June</td>
-    <td>To be completed</td>
- 	</tr>
-	<tr>
-  	<td>Complete system and extra features</td>
+  <tr>
+    <th>Feature Specifications</th>
+    <th>Progress</th>
+  </tr>
+  <tr>
     <td>
-      <ul>
-        <li>Any extra features</li>
+      <strong>Register</strong>
+      <br/>
+      <br/>
+      Users have to sign up to use the site.
+      <br/>
+      <br/>
+      For existing users, clicking the Login here button will redirect them to the login page where they can log in.
+      <br />
+      An error alert will be displayed in the following cases :
+     <ul>
+        <li>Existing User</li>
+        <li>Password length < 8</li>
+        <li>Password and password confirmation do not match</li>
       </ul>
     </td>
-		<td>Mid July</td>
-    <td>To be completed</td>
- 	</tr>
+    <td rowspan="2">
+      Completed
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Sign In</strong>
+      <br/>
+      <br/>
+      Allows user to sign in.
+      <br/>
+      <br/>
+      Users that are not logged in are only able to access the sign up page and the landing page.
+      First time users can click the Sign up here button where they will be redirected to create an account.
+      <br/>
+      <br/>
+      An error alert will be displayed if the user keys in invalid credentials.
+      <br/>
+      <br/>
+      Upon signing in successfully, users will be redirected to the homepage.
+    </td>
+  </tr>
+</table>
+<p align="center">
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Create%20Swap%20Page.png?raw=true" alt="Create Swap Page">
+  </kbd>
+</p>
+<table>
+  <tr>
+    <th>Feature Specifications</th>
+    <th>Progress</th>
+  </tr>
+  <tr>
+    <td>
+      <strong>Create Swap</strong>
+      <br/>
+      <br/>
+      Users are able to create their own swap request where they will input their module code, slot type, current slot and desired slots.
+      <br/>
+      <br/>
+      Users are allowed to select multiple desired slots.
+      <br/>
+      <br/>
+      All the options displayed are fetched from NUSMods API.
+      <br/>
+      <br/>
+      Users are only allowed to create 1 swap request per module code for a given slot type.
+      <br/>
+      <br/> 
+      An error alert will be displayed if a user attempts to create a swap request for the same module code and slot type.
+      <br/>
+      <br/>
+      Once a swap request is created, an alert will be displayed with a hyperlink which will redirect the user to view his/her created swaps
+    </td>
+    <td>
+      Completed
+    </td>
+  </tr>
+</table>
+<p align="center">
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Offer%20Tab.png?raw=true" alt="Current Offers">
+  </kbd>
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Tab.png?raw=true" alt="Current Swaps">
+  </kbd>
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Edit%20Dialog.png?raw=true" alt="Edit Swap">
+  </kbd>
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Delete%20Dialog.png?raw=true" alt="Delete Swap">
+  </kbd>
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Pending%20Offer%20Tab.png?raw=true" alt="Pending Offers">
+  </kbd>
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Pending%20Offer%20Dialog.png?raw=true" alt="Withdraw Pending Offer">
+  </kbd>
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Completed%20Swap%20Tab.png?raw=true" alt="Completed Swaps">
+  </kbd>
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Rejected%20Offer%20Tab.png?raw=true" alt="Rejected Offers">
+  </kbd>
+</p>
+<table>
+  <tr>
+    <th>Feature Specifications</th>
+    <th>Progress</th>
+  </tr>
+  <tr>
+    <td>
+      <strong>Your Swaps and Offers</strong>
+      <br/>
+      <br/>
+      User can view all his open, completed swaps requests as well as current, pending and rejected offers
+    </td>
+    <td rowspan="6">
+      Completed
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Current Offers</strong>
+      <br/>
+      <br/>
+      This tab displays all the offers that the user has received. The details reflected corresponds to the initiators
+    </td>
+  </tr>
+   <tr>
+    <td>
+      <strong>Current Swaps</strong>
+      <br/>
+      <br/>
+       In this tab users are able to view all the swaps that is not yet completed. Users are able to edit their swap details as well as delete them. When a user deletes the swap, all offers will be withdrawn and rejected.
+    </td>
+  </tr>
+   <tr>
+    <td>
+      <strong>Pending Offers</strong>
+      <br/>
+      <br/>
+      This tab displays all the offers that were sent out to other users. Upon clicking on the swap, a dialog will open to display the users current slot details and the desired slot details along with a withdraw button. The withdraw button allows the user to withdraw his offer.
+    </td>
+  </tr>
+   <tr>
+    <td>
+      <strong>Completed Swaps</strong>
+      <br/>
+      <br/>
+      This tabs shows the details of the users new tutorial slots. The email of the other user will also be displayed for further communication. Users are able to delete the swap or change its status to open.
+    </td>
+  </tr>
+   <tr>
+    <td>
+      <strong>Rejected Offers</strong>
+      <br/>
+      <br/>
+      This tab displays all the offers that were rejected by other users.
+    </td>
+  </tr>
+</table>
+<p align="center">
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace.png?raw=true" alt="Marketplace">
+  </kbd>
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Choose%20Swap%20Dialog.png?raw=true" alt="Marketplace Choose Swap">
+  </kbd>
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Create%20Swap%20Dialog.png?raw=true" alt="Marketplace Create Swap">
+  </kbd>
+  <kbd>
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Initiate%20Swap%20Dialog.png?raw=true" alt="Marketplace Initiate Swap">
+  </kbd>
+</p>
+<table>
+  <tr>
+    <th>Feature Specifications</th>
+    <th>Progress</th>
+  </tr>
+  <tr>
+    <td>
+      <strong>Marketplace</strong>
+      <br/>
+      <br/>
+      Allows users to view swap requests created by other users.
+      <br/>
+      <br/>
+      Users are to select the module code, slot type and their current slot from the autocomplete options given.
+      <br/>
+      <br/>
+      Users are only allowed to view modules that are available on NUSMods.
+      <br/>
+      <br/>
+      The type and current slot selected is filtered based on module details obtained from NUSMods(For example, if a module only has recitation and laboratory then the slot type options will only consist of rec and lab). Upon changing the module code, selected slot type and current slot will be cleared to prevent unnecessary requests.
+    </td>
+    <td rowspan="5">
+      Completed
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Marketplace Dialog</strong>
+      <br/>
+      <br/>
+      If the user has created a swap compatible with the one chosen on the marketplace, the create button would be disabled and the user has to select the created swap before clicking next.
+      <br/>
+      <br/>
+      Else, if the user has not created a swap yet, the create button would be enabled for the user to click on. A create dialog will be displayed for the user to create a swap (see next)
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Create dialog</strong>
+      <br/>
+      <br/>
+      Details of the swap that is created matches the inputs selected during the search and the user is unable to change the details of the swap. Upon clicking confirm, the swap will be created and a new dialog will be displayed for the user to confirm the offer (see next)
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Offer Details</strong>
+      <br/>
+      <br/>
+      Upon clicking Initiate, an offer will be created.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Offer page</strong>
+      <br/>
+      <br/>
+      The current user will be able to view the offer on the pending tab of your swaps and offers page. The recipient of the offer will be able to view it on his/her current offers tab
+    </td>
+  </tr>
 </table>
 
-<h2>Wireframes</h2>
-<div align="center">
-  <kbd>	
-  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Create%20Account.png?raw=true" alt="Create Account Page">
-  </kbd>
-  <p><strong> Register Account</strong></p>
-  <kbd>	
-  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Login.png?raw=true" alt="Login Page">
-  </kbd>
-  <p><strong>Login</strong></p>
-  <kbd>
-  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/View%20Swap.png?raw=true" alt="View Swap Page">
-  </kbd>
-  <p><strong>View Swap</strong></p>
-  <kbd>
-  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Confirm%20Swap.png?raw=true" alt="Confirm Swap Page">
-  </kbd>
-  <p><strong>Confirm Swap</strong></p>
-  <kbd>
-  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Create%20Swap.png?raw=true" alt="Create Swap Page">
-  </kbd>
-  <p><strong>Create Swap</strong></p>
-  <kbd>
-  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Open%20Swap.png?raw=true" alt="Your Swap Page">
-  </kbd>
-  <p><strong>Your Swap</strong></p>
-  <kbd>
-  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Offer%20Page.png?raw=true" alt="Current Offers Page">
-  </kbd>
-  <p><strong>Current Offers</strong></p>
-  <kbd>
-  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Completed%20Email%20Highlighted%20%28Video%29.png?raw=true" alt="Completed Swap Page">
-  </kbd>
-  <p><strong>Completed Swap</strong></p>
-</div>
+<h2><strong>Features to be completed by Milestone 3</strong></h2>
+<ol>
+  <li>Replace login with NUS Authentication Service</li>
+  <li>Improve UI</li>
+  <li>Error handling</li>
+  <li>Loading Screens</li>
+</ol>
+
+<h2><strong>Problems Encountered</strong></h2>
+<table>
+  <tr>
+    <th>Problems</th>
+  </tr>
+  <tr>
+    <td>
+      <strong>Authentication error on every request sent to heroku</strong>
+      <br/>
+      <br/>
+      We were using rails secret key base to decode and encode the JWT during development. This caused any request sent to heroku to be unautorised. We found out that we should be using Heroku's SECRET_KEY_BASE during production
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Handling multiple asynchronous calls</strong>
+      <br/>
+      <br/>
+      We were fetching data from our backend to display on the page. However, since the api calls were asynchronous, the webpage would show nothing at first and display the data once the API call is done. We decided to connect pages to redux state for loading to display a loader while calls are not yet completed.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>React not maintaining useState variables across different components when making API calls in a separate component which exports the variables</strong>
+      <br/>
+      <br/>
+      We were planning to fetch data at the start of a page such that components. We solved the issue by passing down information as props as well as only making the calls in the components the information was required in.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Styling issues</strong>
+      <br/>
+      <br/>
+      Locating the correct location to target the props of components such that they are modified correctly was difficult as the Material-UI components are composed of many other components. The solution was to spend more time reading the documentation and experimenting.
+    </td>
+  </tr>
+</table>
