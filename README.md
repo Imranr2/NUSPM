@@ -27,7 +27,7 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
   <li>As a student, I want to be able to view the details of the slot that is available and see the impact of the swap on my timetable.
 </li>
 </ol>
-<p>
+<p align="center">
 <kbd>
   <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Register%20Page.png?raw=true" alt="Register Page">
 </kbd>
@@ -110,7 +110,7 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
     </td>
   </tr>
 </table>
-<p>
+<p align="center">
   <kbd>
     <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Offer%20Tab.png?raw=true" alt="Current Offers">
   </kbd>
@@ -193,7 +193,7 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
     </td>
   </tr>
 </table>
-<p>
+<p align="center">
   <kbd>
     <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace.png?raw=true" alt="Marketplace">
   </kbd>
