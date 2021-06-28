@@ -1,6 +1,8 @@
-<img src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Logo.png?raw=true" alt="NUSPM Logo">
+<div align="center">
+<img width="700" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Logo.png?raw=true" alt="NUSPM Logo">
+</div>
 <h1 align="center">Your one-stop solution for tutorial management</h1>
-<a href="https://nuspm.netlify.app/"><h2 align="center">Click here to get started!</h2></a>
+<h2 align="center"><a href="https://nuspm.netlify.app/">Click here to get started!</a></h2>
 
 <h3><strong>Proposed Level of Achievement:</strong> Gemini</h3>
 <br>
