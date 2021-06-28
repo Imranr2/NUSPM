@@ -27,74 +27,12 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
   <li>As a student, I want to be able to view the details of the slot that is available and see the impact of the swap on my timetable.
 </li>
 </ol>
-<!-- <h2><strong>Proposed Timeline and Features</strong></h2>
 <p>
-Numbering for Work Division
-</p>
-<ol>
-  <li> Imran </li>
-  <li> Jian Hong </li>
-  <li> Both </li>
-</ol>
-<table>
-	<tr>
-		<th>Feature</th>
-		<th>Details</th>
-		<th>Proposed date of completion</th>
-    <th>Stage of completion</th>
- 	</tr>
- 	<tr>
-    <td>Login, Signup and Account management</td>
-   	<td>
-      <ul>
-        <li>Backend for user account creation and login system (1)</li>
-        <li>Frontend Signup and Login pages for users (2)</li>
-        <li>Account management for users, able to edit email address and password (3)</li>
-    </td>
-		<td>End May</td>
-    <td>Completed Login and Signup pages, Account Management page to be completed</td>
- 	</tr>
-	<tr>
-  	<td>Swap System</td>
-   	<td>
-      <ul>
-        <li>Users able to create, view, update and delete swap requests (1)</li>
-        <li>Users are able to view tutorial details (2)</li>
-      </ul>
-    </td>
-		<td>June Week 2</td>
-    <td>To be completed</td>
- 	</tr>
-	<tr>
-  	<td>Swap System</td>
-   	<td>
-      <ul>
-        <li>Users able to accept and initiate offers (3)</li>
-        <li>Integration with NUSMODS to retrieve module information from NUSMODS API (3)</li>
-        <li>Host website on Netlify and Heroku (3)</li>
-      </ul>
-    </td>
-		<td>End of June</td>
-    <td>To be completed</td>
- 	</tr>
-	<tr>
-  	<td>Complete system and extra features</td>
-    <td>
-      <ul>
-        <li>Any extra features</li>
-      </ul>
-    </td>
-		<td>Mid July</td>
-    <td>To be completed</td>
- 	</tr>
-</table> -->
-
-<p float="left">
 <kbd>
-  <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Register%20Page.png" alt="Register Page">
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Register%20Page.png?raw=true" alt="Register Page">
 </kbd>
 <kbd>
-  <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Sign%20In%20Page.png" alt="Sign In Page">
+  <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Sign%20In%20Page.png?raw=true" alt="Sign In Page">
 </kbd>
 </p>
 <table>
@@ -142,7 +80,7 @@ Numbering for Work Division
 </table>
 <p align="center">
   <kbd>
-    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Create%20Swap%20Page.png" alt="Create Swap Page">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Create%20Swap%20Page.png?raw=true" alt="Create Swap Page">
   </kbd>
 </p>
 <table>
@@ -172,30 +110,30 @@ Numbering for Work Division
     </td>
   </tr>
 </table>
-<p float="left">
+<p>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Offer%20Tab.png" alt="Current Offers">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Offer%20Tab.png?raw=true" alt="Current Offers">
   </kbd>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Tab.png" alt="Current Swaps">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Tab.png?raw=true" alt="Current Swaps">
   </kbd>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Edit%20Dialog.png" alt="Edit Swap">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Edit%20Dialog.png?raw=true" alt="Edit Swap">
   </kbd>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Delete%20Dialog.png" alt="Delete Swap">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Delete%20Dialog.png?raw=true" alt="Delete Swap">
   </kbd>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Pending%20Offer%20Tab.png" alt="Pending Offers">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Pending%20Offer%20Tab.png?raw=true" alt="Pending Offers">
   </kbd>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Pending%20Offer%20Dialog.png" alt="Withdraw Pending Offer">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Pending%20Offer%20Dialog.png?raw=true" alt="Withdraw Pending Offer">
   </kbd>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Completed%20Swap%20Tab.png" alt="Completed Swaps">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Completed%20Swap%20Tab.png?raw=true" alt="Completed Swaps">
   </kbd>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Rejected%20Offer%20Tab.png" alt="Rejected Offers">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Rejected%20Offer%20Tab.png?raw=true" alt="Rejected Offers">
   </kbd>
 </p>
 <table>
@@ -255,18 +193,18 @@ Numbering for Work Division
     </td>
   </tr>
 </table>
-<p float="left">
+<p>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace.png" alt="Marketplace">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace.png?raw=true" alt="Marketplace">
   </kbd>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Choose%20Swap%20Dialog.png" alt="Marketplace Choose Swap">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Choose%20Swap%20Dialog.png?raw=true" alt="Marketplace Choose Swap">
   </kbd>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Create%20Swap%20Dialog.png" alt="Marketplace Create Swap">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Create%20Swap%20Dialog.png?raw=true" alt="Marketplace Create Swap">
   </kbd>
   <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Initiate%20Swap%20Dialog.png" alt="Marketplace Initiate Swap">
+    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Initiate%20Swap%20Dialog.png?raw=true" alt="Marketplace Initiate Swap">
   </kbd>
 </p>
 <table>
@@ -337,48 +275,3 @@ Numbering for Work Division
   <li>Error handling</li>
   <li>Loading Screens</li>
 </ol>
-
-<!-- <h2>Wireframes</h2>
-<div align="center">
-  <kbd>
-    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Create%20Swap%20Page.png" alt="Create Swap Page">
-  </kbd>
-  <kbd>
-    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Offer%20Tab.png" alt="Current Offers">
-  </kbd>
-  <p float="left">
-  <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Tab.png" alt="Current Swaps">
-  </kbd>
-  <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Edit%20Dialog.png" alt="Edit Swap">
-  </kbd>
-  <kbd>
-    <img width="469" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Current%20Swap%20Delete%20Dialog.png" alt="Delete Swap">
-  </kbd>
-  </p>
-  <kbd>
-    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Pending%20Offer%20Tab.png" alt="Pending Offers">
-  </kbd>
-  <kbd>
-    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Pending%20Offer%20Dialog.png" alt="Withdraw Pending Offer">
-  </kbd>
-  <kbd>
-    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Completed%20Swap%20Tab.png" alt="Completed Swaps">
-  </kbd>
-  <kbd>
-    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Rejected%20Offer%20Tab.png" alt="Rejected Offers">
-  </kbd>
-  <kbd>
-    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace.png" alt="Marketplace">
-  </kbd>
-  <kbd>
-    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Choose%20Swap%20Dialog.png" alt="Marketplace Choose Swap">
-  </kbd>
-  <kbd>
-    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Create%20Swap%20Dialog.png" alt="Marketplace Create Swap">
-  </kbd>
-  <kbd>
-    <img width="600" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Marketplace%20Initiate%20Swap%20Dialog.png" alt="Marketplace Initiate Swap">
-  </kbd>
-</div> -->
