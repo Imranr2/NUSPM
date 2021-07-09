@@ -282,7 +282,6 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
 
 <h2><strong>Features to be completed by Milestone 3</strong></h2>
 <ol>
-  <li>Replace login with NUS Authentication Service</li>
   <li>Improve UI</li>
   <li>Error handling</li>
   <li>Loading Screens</li>
