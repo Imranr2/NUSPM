@@ -28,7 +28,7 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
 </li>
   <li>As a student, I would also want to create swap requests to improve my chances of finding a desired tutorial slot.</li>
   <li>As a student, I want to be able to update or delete my swap preference.</li>
-  <li>As a student, I want to be able to view the details of the slot that is available and see the impact of the swap on my timetable.
+  <li>As a student, I want to be able to view the details of the slot that is available.
 </li>
 </ol>
 <p align="center">
