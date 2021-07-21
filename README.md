@@ -469,7 +469,7 @@ The main part of our web application are the pages(Login, Home etc..), these all
 
 <div align="center">
   <kbd>
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ERD.png" alt="ERD">
+    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ERD2.png" alt="ERD">
   </kbd>
 </div>
 
