@@ -1,11 +1,11 @@
 <div align="center">
-<img width="700" src="https://github.com/Imranr2/NUSPM/blob/main/readme_markup/Logo.png?raw=true" alt="NUSPM Logo">
+<img width="700" src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/transparentlogo.png" alt="NUSPM Logo">
 </div>
 <h1 align="center">Your one-stop solution for tutorial management</h1>
 <h2 align="center"><a href="https://nuspm.netlify.app/">Click here to get started!</a></h2>
 
 <h3><strong>Proposed Level of Achievement:</strong> Gemini</h3>
-<br>
+<br/>
 <h2><strong>Project Scope</strong></h2>
 <p>A webapp that allows students to connect and find better tutorial slots.
 
@@ -63,15 +63,19 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
     <td>Frontend Register/Login page</td>
     <td>
     Set up the 2 pages to allow users to create accounts and login
+    <br/>
+    <br/>
       <div align="center">
         <kbd>
           <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Login.png" alt="Login">
         </kbd>
         <p><strong>Login</strong></p>
       </div>
+      <br/>
+      <br/>
       <div align="center">
         <kbd>
-          <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Register.png" alt="Login">
+          <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Register.png" alt="Register">
         </kbd>
         <p><strong>Register</strong></p>
       </div>
@@ -104,11 +108,15 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
       Home - Navigation Bar
     </td>
     <td>
-    Upon logging in, users are brought to the home page. The navigation bar at the top of the page allows users to switch between pages and also consists of the notification system for users to track updates on their statuses.
-    <br/>
-    <br/>
-    <br/>
-    insert navbar image
+      Upon logging in, users are brought to the home page. The navigation bar at the top of the page allows users to switch between pages and also consists of the notification system for users to track updates on their statuses.
+      <br/>
+      <br/>
+      <div align="center">
+        <kbd>
+          <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Navbar.png" alt="Navbar">
+        </kbd>
+        <p><strong>Register</strong></p>
+      </div>
     </td>
   </tr>
   <tr>
@@ -116,11 +124,15 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
       Home - Introductory Video
     </td>
     <td>
-    The video gives a quick introduction of the web application and how to use it to create and initiate swap requests, as well as accepting requests from other users.
-    <br/>
-    <br/>
-    <br/>
-    insert home image
+      The video gives a quick introduction of the web application and how to use it to create and initiate swap requests, as well as accepting requests from other users.
+      <br/>
+      <br/>
+      <div align="center">
+        <kbd>
+          <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Homepage.png" alt="Home">
+        </kbd>
+        <p><strong>Register</strong></p>
+      </div>
     </td>
   </tr>
   <tr>
@@ -130,6 +142,7 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
     <td>
       On the Create Swap page, users are able to create their own swap request where they will input their module code, slot type, current slot and desired slots.<br/>
       The module information is retrieved from NUSMods which guarantees the accuracy of the information for users. If the user is open to multiple tutorial slots, they can select more than one in the options. Users can only create 1 swap request per module for a given slot type, making the swap requests easy to view and manage. Upon successful creation of a swap, they can click on the link to go to the Marketplace to look for potential swaps.<br/>
+      <br/>
       <div align="center">
         <kbd>
           <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/CreateSwap.png" alt="Create Swap">
@@ -144,33 +157,47 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
     </td>
     <td>
       On the Marketplace page, users can key in their current slot details and search for swap requests from other users that desire the slot they currently have.
+      <br/>
+      <br/>
       <div align="center">
         <kbd>
           <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/MarketplaceSearchBar.png" alt="Marketplace Search Bar">
         </kbd>
         <p><strong>Marketplace Search Bar</strong></p>
       </div>
-      If the user finds a slot they prefer, they click on it and follow a few simple steps to initiate the offer to the other user.<br/>
+      <br/>
+      <br/>
+      If the user finds a slot they prefer, they click on it and follow a few simple steps to initiate the offer to the other user.
+      <br/>
+      <br/>
       <div align="center">
         <kbd>
           <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Marketplace.png" alt="Marketplace">
         </kbd>
         <p><strong>Step 1: Key in their slot details and search for potential swaps<br/></strong></p>
       </div>
+      <br/>
+      <br/>
       <div align="center">
         <kbd>
           <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/MarketplaceD0.png" alt="Marketplace First Dialog">
         </kbd>
         <p><strong>Step 2: Choose the swap that they have created</strong></p>
       </div>
+      <br/>
+      <br/>
       <div align="center">
         <kbd>
           <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/MarketplaceD1.png" alt="Marketplace Second Dialog">
         </kbd>
          <p><strong>Step 3: Confirm the details of the swap and initiate</strong></p>
       </div>
+      <br/>
+      <br/>
       This sends the offer to the other parties where they can accept or reject the offer.<br/><br/>
       A key feature of this process is that users do not need to have a swap created beforehand to initiate the offer. The details they keyed in to search previously is auto filled in for them if they do not have a swap yet and the swap is created on the spot.
+      <br/>
+      <br/>
       <div align="center">
         <kbd>
           <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/MarketplaceAutoCreate.png" alt="Marketplace Auto Create Dialog">
@@ -184,6 +211,8 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
     </td>
     <td>
       On the Your Swaps page, users can view all their swaps and offers in the 5 tabs, namely:
+      <br/>
+      <br/>
       <ol>
       <li>Current Offers (Offers sent to the user). In the Current Offers tab, users can either accept or reject the offers they receive.<br/>
       </li>
@@ -196,11 +225,15 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
       <li>Rejected Offers (Offers sent by the user that are rejected). In the Rejected Offers tab, users can view their rejected offers.
       </li>
       </ol>
+      <br/>
+      <br/>
        <div align="center">
         <kbd>
           <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/YourSwapTabs.png" alt="Your Swap and Offers Tabs">
         </kbd>
       </div>
+      <br/>
+      <br/>
     </td>
   </tr>
 </table>
@@ -222,24 +255,34 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
     </td>
     <td>
     <ol>
-      <li>Navigation bar<br/>
+      <li><strong>Navigation bar</strong><br/>
         Navbar displays icons on smaller screens
+        <br/>
+        <br/>
         <div align="center">
           <kbd>
             <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ResponsiveNavbar.png" alt="Your Swap and Offers Tabs">
           </kbd>
         </div>
       </li>
-      <li>Search bar (Marketplace)<br/>
+      <br/>
+      <br/>
+      <li><strong>Search bar (Marketplace)</strong><br/>
         Change horizontal search bars to drawer
+        <br/>
+        <br/>
         <div align="center">
           <kbd>
             <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/MarketplaceDrawer.png" alt="Marketplace Search Drawer">
           </kbd>
         </div>
       </li>
-      <li>Your Swap and Offers<br/>
+      <br/>
+      <br/>
+      <li><strong>Your Swap and Offers</strong><br/>
         Changed tabs to display icons on smaller screens
+        <br/>
+        <br/>
         <div align="center">
           <kbd>
             <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ResponsiveYourSwap.png" alt="Your Swap and Offer Tab Icons">
@@ -255,28 +298,43 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
     </td>
     <td>
     The notification system sends notifications to the users as follows: 
+    <br/>
+    <br/>
       <ol>
         <li>On accepting an offer/having an offer accepted by another user, users will receive a green success alert
+        <br/>
+        <br/>
           <div align="center">
             <kbd>
               <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/GreenNotif.png" alt="Success Notifications">
             </kbd>
           </div>
+        <br/>
+        <br/>
         </li>
         <li>On creating/sending/receiving/editing swaps/offers, users will receive a blue info alert
+        <br/>
+        <br/>
           <div align="center">
             <kbd>
               <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/BlueNotif.png" alt="Info Notifications">
             </kbd>
           </div>
+        <br/>
+        <br/>
         </li>
-        <li>On rejecting/deleting/withdrawing swaps/offers, users will receive a red error alert.<br/>
+        <li>On rejecting/deleting/withdrawing swaps/offers, users will receive a red error alert.
+        <br/>
+        <br/>
           <div align="center">
             <kbd>
               <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/RedNotif.png" alt="Delete/Reject Notifications">
             </kbd>
           </div>
+          <br/>
           The latest 10 notifications are shown to the users.
+        <br/>
+        <br/>
         </li>
       </ol>
     </td>
@@ -381,33 +439,41 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
 <h2><strong>Unified Modelling Language (UML) Diagrams
 </strong></h2>
 <p>
-The diagram below illustrates the activities users could perform on the web application.<br/>
+The diagram below illustrates the activities users could perform on the web application.
+<br/>
+<br/>
 
 <div align="center">
   <kbd>
     <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Behaviour%20Diagram.png" alt="Behaviour Diagram">
   </kbd>
 </div>
-
+<br/>
+<br/>
 Firstly, users register and login with their accounts, where they are brought to the home page, which features a video going through the usage of the application. Next, they can proceed to the Create Swap page to post their swap request for others to view, or head to the Marketplace to search for swaps other users posted. Subsequently, they can head over to the Your Swap and Offers page to check the status of their swaps/offers, as well as performing follow up actions such as accepting offers from other users. THe notification system serves to notify users about any changes they make as well as incoming offers.<br/>
 Next, we have the component tree of the web application illustrating it’s structure.
-
+<br/>
+<br/>
 <div align="center">
   <kbd>
     <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Component%20Tree.png" alt="Component Tree">
   </kbd>
 </div>
-
+<br/>
+<br/>
 The main part of our web application are the pages(Login, Home etc..), these all contain the Navigation Bar, as well as their respective sub components.
 
 </p>
 
-<h2><strong>Entity Relationship Diagram (ERD)
-</strong></h2>
-<!-- erd and some explanation -->
+<h2><strong>Entity Relationship Diagram (ERD)</strong></h2>
 
-<h2><strong>User Experience
-</strong></h2>
+<div align="center">
+  <kbd>
+    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ERD.png" alt="ERD">
+  </kbd>
+</div>
+
+<h2><strong>User Experience</strong></h2>
 <!-- some explanation -->
 
 <h2><strong>Response to Milestone Evaluations
