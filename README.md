@@ -289,6 +289,19 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
           </kbd>
         </div>
       </li>
+      <br/>
+      <br/>
+      <li>
+        <strong>Edit Profile</strong><br/>
+        Changed tabs to display icons on smaller screens
+        <br/>
+        <br/>
+        <div align="center">
+          <kbd>
+            <img width="300" src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ChangePasswordSmall.png" alt="Edit Profile Icons">
+          </kbd>
+        </div>
+      </li>
     </ol>
     </td>
   </tr>
@@ -341,6 +354,36 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
   </tr>
   <tr>
     <td>
+      Change Password
+    </td>
+    <td>
+      Users can change their password by keying in their old password and a new password twice. A check is done in the backend to ensure that the password matches before updating the password
+      <br/>
+      <br/>
+      <div align="center">
+        <kbd>
+          <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ChangePassword.png" alt="Change Password">
+        </kbd>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      About
+    </td>
+    <td>
+      Users can get additional information on the website through the about page
+      <br/>
+      <br/>
+      <div align="center">
+        <kbd>
+          <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/About.png" alt="About">
+        </kbd>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
       UI Updates
     </td>
     <td>
@@ -369,6 +412,131 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
       </ol>
     </td>
   </tr>
+</table>
+
+<h2><strong>Behaviour Diagram
+</strong></h2>
+<p>
+The diagram below illustrates the activities users could perform on the web application.
+<br/>
+<br/>
+
+<div align="center">
+  <kbd>
+    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Behaviour%20Diagram.png" alt="Behaviour Diagram">
+  </kbd>
+</div>
+<br/>
+<br/>
+Firstly, users register and login with their accounts, where they are brought to the home page, which features a video going through the usage of the application. Next, they can proceed to the Create Swap page to post their swap request for others to view, or head to the Marketplace to search for swaps other users posted. Subsequently, they can head over to the Your Swap and Offers page to check the status of their swaps/offers, as well as performing follow up actions such as accepting offers from other users. THe notification system serves to notify users about any changes they make as well as incoming offers.<br/>
+Next, we have the component tree of the web application illustrating it’s structure.
+<br/>
+<br/>
+<h2><strong>React Front End Component Tree
+</strong></h2>
+<div align="center">
+  <kbd>
+    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Component%20Tree.png" alt="Component Tree">
+  </kbd>
+</div>
+<br/>
+<br/>
+The main part of our web application are the pages(Login, Home etc..), these all contain the Navigation Bar and Footer, as well as their respective sub components.
+
+</p>
+
+<h2><strong>Entity Relationship Diagram (ERD)</strong></h2>
+
+<p>
+The following is an ERD for our backend.
+<div align="center">
+  <kbd>
+    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ERD2.png" alt="ERD">
+  </kbd>
+</div>
+  A user can have many swaps, offers and notifications. Notifications is polymorphic and is associated with any model that is declared as a notifiable. Notifiable type takes in a string which in our case would be either 'Swap' or 'Offer' while Notifiable ID takes in an integer corresponding to the id of the Swap/Offer.
+</p>
+
+<h2><strong>User Experience</strong></h2>
+
+<p>
+  After the testing we have conducted on our system, we identified several issues and have made changes to enhance the user experience.
+  This helps to minimise the possibility of users making mistakes leading to a negative experience.
+</p>
+<table>
+  <tr>
+    <th>
+      Issue
+    </th>
+    <th>
+      Changes
+    </th>
+  </tr>
+  <tr>
+    <td>
+      Each user can create multiple swap requests with the same details, resulting in a clutter for both the Marketplace and Your Swap pages
+    </td>
+    <td>
+      Updated backend to ensure that a user is unable to create a swap request with the same module code and slot type
+    </td>
+  </tr>
+   <tr>
+    <td>
+      In the create swap page, changing the module code/slot type does not clear the current slot and desired slot fields. This allows users to create meaningless swap requests with non-existent tutorials
+    </td>
+    <td>
+      Changing these values clears the fields, thus users can only create swaps with relevant details
+    </td>
+  </tr>
+  <tr>
+    <td>
+      If a user edits/delets a swap requests, the change will also be reflected on the offers sent/received by the user. This causes other users to have irrelevant offers.
+    </td>
+    <td>
+      Editing/Deleting swap requests now withdraws all offers the user initiated and rejects all offers sent to the user, thus users will not be misled by irrelevant offers.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Given a tutorial slot A. If a user accepts an offer for A, all offers sent out/ received by the user for slot A will still be present which can lead to confusion amongst users.
+    </td>
+    <td>
+      After the user accepts the offer for slot A, all offers the user sent out for slot A will be withdrawn, while offers received by the user for slot A will have to be manually rejected. 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      When initiating a swap in the marketplace, users can either create a swap or select a swap they have already created. If a user tries to create a swap with the same details as the one created before, this will lead to an error.
+    </td>
+    <td>
+      Users are no longer able to choose the option to create a swap if they had already done so, and have to choose the swap created beforehand to proceed.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Swaps shown on the Marketplace are not removed even after an offer has been initiated by the user, potentially leading to multiple offers initiated to the same user. Furthermore, offers that have been accepted/rejected still remain on the marketplace.
+    </td>
+    <td>
+      Marketplace correctly filters for only swaps that the user has not sent an offer to before and are open for swapping.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Swaps can be edited to have the same module code and slot type. This leads to a user having 2 swap requests with the same details
+    </td>
+    <td>
+      Swaps now cannot be edited to have the same module code and slot type
+    </td>
+  </tr>
+  <tr>
+    <td>
+      When initiating an offer in the marketplace, if a user has not created a swap beforehand, the user would be prompted to create a swap. Initially, the user is able to select the module code, slot type, current slot and desired slots. This allows malicious users to send meaningless offers.
+    </td>
+    <td>
+      Now users are only able to select their desired slots, with the default slot that they entered during the search. The module code, slot type and current slot will match the slot details of the other user
+    </td>
+  </tr>
+
 </table>
 
 <h2><strong>Feature Limitations
@@ -435,50 +603,6 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
     </td>
   </tr>
 </table>
-
-<h2><strong>Unified Modelling Language (UML) Diagrams
-</strong></h2>
-<p>
-The diagram below illustrates the activities users could perform on the web application.
-<br/>
-<br/>
-
-<div align="center">
-  <kbd>
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Behaviour%20Diagram.png" alt="Behaviour Diagram">
-  </kbd>
-</div>
-<br/>
-<br/>
-Firstly, users register and login with their accounts, where they are brought to the home page, which features a video going through the usage of the application. Next, they can proceed to the Create Swap page to post their swap request for others to view, or head to the Marketplace to search for swaps other users posted. Subsequently, they can head over to the Your Swap and Offers page to check the status of their swaps/offers, as well as performing follow up actions such as accepting offers from other users. THe notification system serves to notify users about any changes they make as well as incoming offers.<br/>
-Next, we have the component tree of the web application illustrating it’s structure.
-<br/>
-<br/>
-<div align="center">
-  <kbd>
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Component%20Tree.png" alt="Component Tree">
-  </kbd>
-</div>
-<br/>
-<br/>
-The main part of our web application are the pages(Login, Home etc..), these all contain the Navigation Bar, as well as their respective sub components.
-
-</p>
-
-<h2><strong>Entity Relationship Diagram (ERD)</strong></h2>
-
-<div align="center">
-  <kbd>
-<<<<<<< HEAD
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ERD.png" alt="ERD">
-=======
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ERD2.png" alt="ERD">
->>>>>>> 2c2753b340bad3b3074fccbca65765cbc2c8b46d
-  </kbd>
-</div>
-
-<h2><strong>User Experience</strong></h2>
-<!-- some explanation -->
 
 <h2><strong>Response to Milestone Evaluations
 </strong></h2>
