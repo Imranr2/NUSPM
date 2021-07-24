@@ -289,6 +289,19 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
           </kbd>
         </div>
       </li>
+      <br/>
+      <br/>
+      <li>
+        <strong>Edit Profile</strong><br/>
+        Changed tabs to display icons on smaller screens
+        <br/>
+        <br/>
+        <div align="center">
+          <kbd>
+            <img width="300" src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ChangePasswordSmall.png" alt="Edit Profile Icons">
+          </kbd>
+        </div>
+      </li>
     </ol>
     </td>
   </tr>
@@ -341,6 +354,36 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
   </tr>
   <tr>
     <td>
+      Change Password
+    </td>
+    <td>
+      Users can change their password by keying in their old password and a new password twice. A check is done in the backend to ensure that the password matches before updating the password
+      <br/>
+      <br/>
+      <div align="center">
+        <kbd>
+          <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ChangePassword.png" alt="Change Password">
+        </kbd>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      About
+    </td>
+    <td>
+      Users can get additional information on the website through the about page
+      <br/>
+      <br/>
+      <div align="center">
+        <kbd>
+          <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/About.png" alt="About">
+        </kbd>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
       UI Updates
     </td>
     <td>
@@ -367,6 +410,244 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
         <li>Fixed issue where alerts persist even after moving to a different page
         </li>
       </ol>
+    </td>
+  </tr>
+</table>
+
+<h2><strong>Behaviour Diagram
+</strong></h2>
+<p>
+The diagram below illustrates the activities users could perform on the web application.
+<br/>
+<br/>
+
+<div align="center">
+  <kbd>
+    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Behaviour%20Diagram.png" alt="Behaviour Diagram">
+  </kbd>
+</div>
+<br/>
+<br/>
+Firstly, users register and login with their accounts, where they are brought to the home page, which features a video going through the usage of the application. Next, they can proceed to the Create Swap page to post their swap request for others to view, or head to the Marketplace to search for swaps other users posted. Subsequently, they can head over to the Your Swap and Offers page to check the status of their swaps/offers, as well as performing follow up actions such as accepting offers from other users. THe notification system serves to notify users about any changes they make as well as incoming offers.<br/>
+Next, we have the component tree of the web application illustrating it’s structure.
+<br/>
+<br/>
+<h2><strong>React Front End Component Tree
+</strong></h2>
+<div align="center">
+  <kbd>
+    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Component%20Tree.png" alt="Component Tree">
+  </kbd>
+</div>
+<br/>
+<br/>
+The main part of our web application are the pages(Login, Home etc..), these all contain the Navigation Bar and Footer, as well as their respective sub components.
+
+</p>
+
+<h2><strong>Entity Relationship Diagram (ERD)</strong></h2>
+
+<p>
+The following is an ERD for our backend.
+<div align="center">
+  <kbd>
+    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ERD2.png" alt="ERD">
+  </kbd>
+</div>
+  A user can have many swaps, offers and notifications. Notifications is polymorphic and is associated with any model that is declared as a notifiable. Notifiable type takes in a string which in our case would be either 'Swap' or 'Offer' while Notifiable ID takes in an integer corresponding to the id of the Swap/Offer.
+</p>
+
+<h2><strong>Testing 
+</strong></h2>
+
+<p>We mainly used Dogfooding and manual testing to test our app.
+</p>
+
+<table>
+  <tr>
+    <th>
+      Methods
+    </th>
+    <th>
+      Details
+    </th>
+  </tr>
+  <tr>
+    <td>
+      Dogfooding
+    </td>
+    <td>
+      After developing a new feature, we would test the app by going through the entire workflow of a typical user. From registering to creating a swap and initiating a swap.
+      We would check for any unexpected bugs along the way and find ways to troubleshoot before testing the workflow again. 
+      <br/>
+      After doing tests in the development environment, we would push our app to our hosting servers and go through the workflow again. We have experienced multiple situations where features work in development but not in production and have decided to always test our app in development as well as production before continuing.
+    </td>
+  </tr>
+   <tr>
+    <td>
+      Insomnia
+    </td>
+    <td>
+      We mainly used Insomnia to test our REST API whenever a new route was added. Afterwards, we would create a simple page on our front-end with enough functionality to test the new route. For example, when we added a create swap route in our backend, we made a simple page with a few text fields and a button to ensure that the route is working properly.
+    </td>
+  </tr>
+</table>
+
+<h2><strong>User Experience</strong></h2>
+
+<p>
+  After the testing we have conducted on our system, we identified several issues and have made changes to enhance the user experience.
+  This helps to minimise the possibility of users making mistakes leading to a negative experience.
+</p>
+<table>
+  <tr>
+    <th>
+      Issue
+    </th>
+    <th>
+      Changes
+    </th>
+  </tr>
+  <tr>
+    <td>
+      Each user can create multiple swap requests with the same details, resulting in a clutter for both the Marketplace and Your Swap pages
+    </td>
+    <td>
+      Updated backend to ensure that a user is unable to create a swap request with the same module code and slot type
+    </td>
+  </tr>
+   <tr>
+    <td>
+      In the create swap page, changing the module code/slot type does not clear the current slot and desired slot fields. This allows users to create meaningless swap requests with non-existent tutorials
+    </td>
+    <td>
+      Changing these values clears the fields, thus users can only create swaps with relevant details
+    </td>
+  </tr>
+  <tr>
+    <td>
+      If a user edits/deletes a swap requests, the change will also be reflected on the offers sent/received by the user. This causes other users to have irrelevant offers.
+    </td>
+    <td>
+      Editing/Deleting swap requests now withdraws all offers the user initiated and rejects all offers sent to the user, thus users will not be misled by irrelevant offers.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Given a tutorial slot A. If a user accepts an offer for A, all offers sent out/ received by the user for slot A will still be present which can lead to confusion amongst users.
+    </td>
+    <td>
+      After the user accepts the offer for slot A, all offers the user sent out for slot A will be withdrawn, while offers received by the user for slot A will have to be manually rejected. 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      When initiating a swap in the marketplace, users can either create a swap or select a swap they have already created. If a user tries to create a swap with the same details as the one created before, this will lead to an error.
+    </td>
+    <td>
+      Users are no longer able to choose the option to create a swap if they had already done so, and have to choose the swap created beforehand to proceed.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Swaps shown on the Marketplace are not removed even after an offer has been initiated by the user, potentially leading to multiple offers initiated to the same user. Furthermore, offers that have been accepted/rejected still remain on the marketplace.
+    </td>
+    <td>
+      Marketplace correctly filters for only swaps that the user has not sent an offer to before and are open for swapping.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Swaps can be edited to have the same module code and slot type. This leads to a user having 2 swap requests with the same details
+    </td>
+    <td>
+      Swaps now cannot be edited to have the same module code and slot type
+    </td>
+  </tr>
+  <tr>
+    <td>
+      When initiating an offer in the marketplace, if a user has not created a swap beforehand, the user would be prompted to create a swap. Initially, the user is able to select the module code, slot type, current slot and desired slots. This allows malicious users to send meaningless offers.
+    </td>
+    <td>
+      Now users are only able to select their desired slots, with the default slot that they entered during the search. The module code, slot type and current slot will match the slot details of the other user
+    </td>
+  </tr>
+
+</table>
+
+<h2><strong>Technical Details</strong></h2>
+
+<table>
+  <tr>
+    <th>Details</th>
+    <th>Justifications</th>
+  </tr>
+  <tr>
+    <td>
+      Redux
+    </td>
+    <td>
+      We used redux to track the states of our app such as tracking if a user is authenticated or if a request is currently being made to the backend. Initially, we had a shared state to track all the different actions (create/edit/delete) for a specific model. For example, if a user creates or edit a swap, the same shared state (success) is updated. To fix this issue, we separated the state for each action (createSuccess, searchSuccess etc…), allowing us to have more control over particular states. 
+      <br/>
+      <br/>
+      <div align="center">
+        <kbd>
+          <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Redux.png" alt="Redux">
+        </kbd>
+        <p><strong>Login</strong></p>
+      </div>
+      <br/>
+      <br/>
+      Before this update, if a user were to search for a swap in the marketplace, the shared success state would be updated to true. If the user navigates to the create swap page before the success state resets to false, a success alert will be displayed to the user even though the user has not performed any actions. With the new change, the searchSuccess and createSuccess are updated separately hence removing this bug.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Polymorphic Associations
+    </td>
+    <td>
+      We implemented in app notifications where users will be alerted when they perform an action such as creating/editing/deleting. We wanted the swap and offer models to have notifications associated with them. Instead of creating a separate notification model such as OfferNotification/SwapNotification, we decided to use polymorphic associations. We created a single Notification model that takes in a notifiable type as a string (‘Offer’/’Swap’) and a notifiable id as an integer to reference the model in the database.This allows any model that is declared as notifiable to have notifications. This would also allow any future models to have notifications without creating an extra model each time.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Notification Creation in Backend
+    </td>
+    <td>
+      Instead of sending a create notification post request to our backend every time a user performs an action, we handled this process in our backend. For example, if a user sends a post request to create a swap, a notification would be created as well without explicitly sending another post request to create the notification.
+    </td>
+  </tr>
+</table>
+
+<h2><strong>Trickier Features and how we implemented it 
+</strong></h2>
+
+<p>This section goes deeper into the features that we felt were more complex
+</p>
+
+<table>
+  <tr>
+    <th>
+      Feature
+    </th>
+    <th>
+      Implementation
+    </th>
+  </tr>
+  <tr>
+    <td>
+      Initiating an offer
+    </td>
+    <td>
+      We needed to implement a process where users can initiate a swap with other users. There were 2 ways we could go about this, we could create multiple pages for each step or render different dialogs for each step. We decided to go with the latter as we felt it was better in terms of user experience. This was tricky as we had to maintain many different states. For example, if a user has already created a swap we have to send a get request to get all his swaps. This was so that he could select the tutorial to perform the swap with another user. Otherwise, we render the dialog for the user to create a swap where we send a post request and store the response to be displayed later. When a user initiates, we have to send a post request and as well as a get request update the marketplace to remove said swap to prevent spamming. 
+    </td>
+  </tr>
+   <tr>
+    <td>
+      Re-rendering page on change
+    </td>
+    <td>
+      We needed to find a way to re-render a users swaps and offers after any changes (edit/delete). We ran into an issue where the useEffect only runs when the page renders for the first time but not when any changes occur. First, we tried to add a dependency array where any changes to the dependencies would cause the useEffect to run again. However, it sends a request to the backend infinitely as React doesn’t take arrays as dependencies. We finally solved this issue by connecting the redux states to the components and using said states as dependencies. Whenever the state changes, a get request will be sent to re-render the page.
     </td>
   </tr>
 </table>
@@ -435,50 +716,6 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
     </td>
   </tr>
 </table>
-
-<h2><strong>Unified Modelling Language (UML) Diagrams
-</strong></h2>
-<p>
-The diagram below illustrates the activities users could perform on the web application.
-<br/>
-<br/>
-
-<div align="center">
-  <kbd>
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Behaviour%20Diagram.png" alt="Behaviour Diagram">
-  </kbd>
-</div>
-<br/>
-<br/>
-Firstly, users register and login with their accounts, where they are brought to the home page, which features a video going through the usage of the application. Next, they can proceed to the Create Swap page to post their swap request for others to view, or head to the Marketplace to search for swaps other users posted. Subsequently, they can head over to the Your Swap and Offers page to check the status of their swaps/offers, as well as performing follow up actions such as accepting offers from other users. THe notification system serves to notify users about any changes they make as well as incoming offers.<br/>
-Next, we have the component tree of the web application illustrating it’s structure.
-<br/>
-<br/>
-<div align="center">
-  <kbd>
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Component%20Tree.png" alt="Component Tree">
-  </kbd>
-</div>
-<br/>
-<br/>
-The main part of our web application are the pages(Login, Home etc..), these all contain the Navigation Bar, as well as their respective sub components.
-
-</p>
-
-<h2><strong>Entity Relationship Diagram (ERD)</strong></h2>
-
-<div align="center">
-  <kbd>
-<<<<<<< HEAD
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ERD.png" alt="ERD">
-=======
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ERD2.png" alt="ERD">
->>>>>>> 2c2753b340bad3b3074fccbca65765cbc2c8b46d
-  </kbd>
-</div>
-
-<h2><strong>User Experience</strong></h2>
-<!-- some explanation -->
 
 <h2><strong>Response to Milestone Evaluations
 </strong></h2>
