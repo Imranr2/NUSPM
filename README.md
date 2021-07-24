@@ -592,9 +592,9 @@ The following is an ERD for our backend.
       <br/>
       <div align="center">
         <kbd>
-          <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Redux.png" alt="Redux">
+          <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Redux.png" alt="Redux" width='500'>
         </kbd>
-        <p><strong>Login</strong></p>
+        <p><strong>Change in state</strong></p>
       </div>
       <br/>
       <br/>
