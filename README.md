@@ -4,14 +4,23 @@
 <h1 align="center">Your one-stop solution for tutorial management</h1>
 <h2 align="center"><a href="https://nuspm.netlify.app/">Click here to get started!</a></h2>
 
-<h3><strong>Proposed Level of Achievement:</strong> Gemini</h3>
+<h2><strong>Proposed Level of Achievement:</strong> Gemini</h2>
 <br/>
 <h2><strong>Project Scope</strong></h2>
 <p>A webapp that allows students to connect and find better tutorial slots.
 
-NUSPM enables students to create swap requests to trade their tutorial slot for a more desirable one. Students are also able to initiate swap requests with other students. This solves the current issue which involves asking on multiple platforms(Telegram, Reddit etc…) which is troublesome and inefficient.
+NUSPM enables students to create swap requests to trade their tutorial slot for a more desirable one. Students are also able to initiate swap requests with other students. This solves the current issue which involves asking on multiple platforms(Telegram, Reddit etc…) which is troublesome and inefficient. As such, the project can be divided into 3 core features:
 
+<ol>
+<li>User Authentication - Keep track of users
+</li>
+<li>Create Swap and Marketplace - Allow users to create swap requests of their own as well as search for potential swaps by others
+</li>
+<li>Swaps and Offers - Allow users to view and manage their current swaps and offers
+</li>
+</ol>
 </p>
+
 <h2><strong>Motivation</strong></h2>
 <p>Imagine that you were allocated a tutorial slot that does not fit in your timetable. At this point, you are feeling stressed out as you might not be able to secure your desired tutorial slot and might be forced to drop the module. You also have no way of knowing if there is another student willing to swap with your slot. Also due to the covid situation, it is difficult to reach out to other students taking the same module and you might be left with an undesirable slot even after the first add/swap tutorial exercise. What if there was a website that you can use to find potential swaps before the round starts? This will immensely alleviate the stress that you are having. Welcome to NUSPM, a website where you can create requests for swaps and also view requests created by other students who are facing the same problem.
 </p>
@@ -37,20 +46,22 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
   <li>As a student, I want to be able to view the details of the slot that is available.
 </li>
 </ol>
-<h2><strong>Project Scope</strong></h2>
-<p>A webapp that allows students to connect and find better tutorial slots.
 
-NUSPM enables students to create swap requests to trade their tutorial slot for a more desirable one. Students are also able to initiate swap requests with other students. This solves the current issue which involves asking on multiple platforms(Telegram, Reddit etc…) which is troublesome and inefficient. As such, the project can be divided into 3 core features:
+<h2><strong>Behaviour Diagram
+</strong></h2>
+<p>
+The diagram below illustrates the activities users could perform on the web application to give an overview of the workflow of a typical user.
+<br/>
+<br/>
 
-<ol>
-<li>User Authentication - Keep track of users
-</li>
-<li>Create Swap and Marketplace - Allow users to create swap requests of their own as well as search for potential swaps by others
-</li>
-<li>Swaps and Offers - Allow users to view and manage their current swaps and offers
-</li>
-</ol>
-</p>
+<div align="center">
+  <kbd>
+    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Behaviour%20Diagram.png" alt="Behaviour Diagram">
+  </kbd>
+</div>
+<br/>
+<br/>
+Firstly, users register and login with their accounts, where they are brought to the home page, which features a video going through the usage of the application. Next, they can proceed to the Create Swap page to post their swap request for others to view, or head to the Marketplace to search for swaps other users posted. Subsequently, they can head over to the Your Swap and Offers page to check the status of their swaps/offers, as well as performing follow up actions such as accepting offers from other users. THe notification system serves to notify users about any changes they make as well as incoming offers.<br/>
 
 <h3><strong>Milestone 1: User Authentication</strong></h3>
 
@@ -414,24 +425,6 @@ NUSPM enables students to create swap requests to trade their tutorial slot for 
   </tr>
 </table>
 
-<h2><strong>Behaviour Diagram
-</strong></h2>
-<p>
-The diagram below illustrates the activities users could perform on the web application.
-<br/>
-<br/>
-
-<div align="center">
-  <kbd>
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Behaviour%20Diagram.png" alt="Behaviour Diagram">
-  </kbd>
-</div>
-<br/>
-<br/>
-Firstly, users register and login with their accounts, where they are brought to the home page, which features a video going through the usage of the application. Next, they can proceed to the Create Swap page to post their swap request for others to view, or head to the Marketplace to search for swaps other users posted. Subsequently, they can head over to the Your Swap and Offers page to check the status of their swaps/offers, as well as performing follow up actions such as accepting offers from other users. THe notification system serves to notify users about any changes they make as well as incoming offers.<br/>
-Next, we have the component tree of the web application illustrating it’s structure.
-<br/>
-<br/>
 <h2><strong>React Front End Component Tree
 </strong></h2>
 <div align="center">
@@ -439,7 +432,6 @@ Next, we have the component tree of the web application illustrating it’s stru
     <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Component%20Tree.png" alt="Component Tree">
   </kbd>
 </div>
-<br/>
 <br/>
 The main part of our web application are the pages(Login, Home etc..), these all contain the Navigation Bar and Footer, as well as their respective sub components.
 
@@ -456,7 +448,7 @@ The following is an ERD for our backend.
 </div>
   A user can have many swaps, offers and notifications. Notifications is polymorphic and is associated with any model that is declared as a notifiable. Notifiable type takes in a string which in our case would be either 'Swap' or 'Offer' while Notifiable ID takes in an integer corresponding to the id of the Swap/Offer.
 </p>
-
+<br />
 <h2><strong>Testing 
 </strong></h2>
 
@@ -492,9 +484,7 @@ The following is an ERD for our backend.
     </td>
   </tr>
 </table>
-
-<h2><strong>User Experience</strong></h2>
-
+<br/>
 <p>
   After the testing we have conducted on our system, we identified several issues and have made changes to enhance the user experience.
   This helps to minimise the possibility of users making mistakes leading to a negative experience.
@@ -716,7 +706,6 @@ The following is an ERD for our backend.
     </td>
   </tr>
 </table>
-
 <h2><strong>Response to Milestone Evaluations
 </strong></h2>
 
@@ -871,6 +860,55 @@ The following is an ERD for our backend.
        <p><strong>Response:</strong> 
         We have implemented the in app notification system which notifies the user when he accepts or sends an offer.
       </p>
+    </td>
+  </tr>
+</table>
+
+<h2><strong>Future Enhancements
+</strong></h2>
+
+<p>Besides improving on the limitations, there are many areas of the app which we would like to work on in the future.
+</p>
+
+<table>
+  <tr>
+    <th>
+      Enhancement
+    </th>
+    <th>
+      Details
+    </th>
+  </tr>
+  <tr>
+    <td>
+      Admin privileges
+    </td>
+    <td>
+      Create an admin panel to allow admins to easily manage users/data in the web application
+    </td>
+  </tr>
+   <tr>
+    <td>
+      Telegram bot
+    </td>
+    <td>
+      Create a telegram bot which would send notifications to users when they receive a new offer
+    </td>
+  </tr>
+   <tr>
+    <td>
+      In app chat
+    </td>
+    <td>
+      In app chat for users to communicate real time without the need to write emails which is slow and tedious.
+    </td>
+  </tr>
+   <tr>
+    <td>
+      Automated testing
+    </td>
+    <td>
+      Currently, we are manually testing our app. In the future, we hope to shift to a more automated style of testing
     </td>
   </tr>
 </table>
