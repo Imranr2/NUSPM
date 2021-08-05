@@ -63,6 +63,30 @@ The diagram below illustrates the activities users could perform on the web appl
 <br/>
 Firstly, users register and login with their accounts, where they are brought to the home page, which features a video going through the usage of the application. Next, they can proceed to the Create Swap page to post their swap request for others to view, or head to the Marketplace to search for swaps other users posted. Subsequently, they can head over to the Your Swap and Offers page to check the status of their swaps/offers, as well as performing follow up actions such as accepting offers from other users. THe notification system serves to notify users about any changes they make as well as incoming offers.<br/>
 
+<h2><strong>React Front End Component Tree
+</strong></h2>
+<div align="center">
+  <kbd>
+    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Component%20Tree.png" alt="Component Tree">
+  </kbd>
+</div>
+<br/>
+The main part of our web application are the pages(Login, Home etc..), these all contain the Navigation Bar and Footer, as well as their respective sub components.
+
+</p>
+
+<h2><strong>Entity Relationship Diagram (ERD)</strong></h2>
+
+<p>
+The following is an ERD for our backend.
+<div align="center">
+  <kbd>
+    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ERD2.png" alt="ERD">
+  </kbd>
+</div>
+<br/>
+  A user can have many swaps, offers and notifications. Notifications is polymorphic and is associated with any model that is declared as a notifiable. Notifiable type takes in a string which in our case would be either 'Swap' or 'Offer' while Notifiable ID takes in an integer corresponding to the id of the Swap/Offer.
+</p>
 <h3><strong>Milestone 1: User Authentication</strong></h3>
 
 <table>
@@ -425,29 +449,6 @@ Firstly, users register and login with their accounts, where they are brought to
   </tr>
 </table>
 
-<h2><strong>React Front End Component Tree
-</strong></h2>
-<div align="center">
-  <kbd>
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/Component%20Tree.png" alt="Component Tree">
-  </kbd>
-</div>
-<br/>
-The main part of our web application are the pages(Login, Home etc..), these all contain the Navigation Bar and Footer, as well as their respective sub components.
-
-</p>
-
-<h2><strong>Entity Relationship Diagram (ERD)</strong></h2>
-
-<p>
-The following is an ERD for our backend.
-<div align="center">
-  <kbd>
-    <img src="https://github.com/Imranr2/NUSPM/blob/main/README_Images/ERD2.png" alt="ERD">
-  </kbd>
-</div>
-  A user can have many swaps, offers and notifications. Notifications is polymorphic and is associated with any model that is declared as a notifiable. Notifiable type takes in a string which in our case would be either 'Swap' or 'Offer' while Notifiable ID takes in an integer corresponding to the id of the Swap/Offer.
-</p>
 <br />
 <h2><strong>Testing 
 </strong></h2>
@@ -859,6 +860,56 @@ The following is an ERD for our backend.
     <td>
        <p><strong>Response:</strong> 
         We have implemented the in app notification system which notifies the user when he accepts or sends an offer.
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>
+      Milestone 3
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <p><strong>1. Suggestion/Question:</strong> 
+        Registering an account with an invalid email address causes app to crash. 
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+       <p><strong>Response:</strong> 
+        We made a typo in the front end code causing the error. It has since been fixed
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><strong>2. Suggestion/Question:</strong>  
+        Addition of in-app chat, Luminus API, NUS Authentication Service.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+       <p><strong>Response:</strong> 
+        We are considering the addition of these features in the future.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><strong>3. Suggestion/Question:</strong> 
+        Clearing of notification
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+       <p><strong>Response:</strong> 
+        We believe that clearing the notification would not be beneficial for the user. We have implemented the notification feature to display the 10 latest notifications instead.
       </p>
     </td>
   </tr>
