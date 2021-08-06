@@ -4,7 +4,7 @@
 <h1 align="center">Your one-stop solution for tutorial management</h1>
 <h2 align="center"><a href="https://nuspm.netlify.app/">Click here to get started!</a></h2>
 
-<h2><strong>Proposed Level of Achievement:</strong> Gemini</h2>
+<h2><strong>Proposed Level of Achievement:</strong>Apollo</h2>
 <br/>
 <h2><strong>Project Scope</strong></h2>
 <p>A webapp that allows students to connect and find better tutorial slots.
